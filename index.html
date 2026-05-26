@@ -655,14 +655,14 @@ footer {
 <nav>
   <div class="logo">PS.DEV</div>
   <div class="nav-links">
-    <a class="nav-link" onclick="scrollTo('about')">About</a>
-    <a class="nav-link" onclick="scrollTo('skills')">Skills</a>
-    <a class="nav-link" onclick="scrollTo('research')" style="color:var(--purple-light);font-weight:700">🏛️ Patent</a>
-    <a class="nav-link" onclick="scrollTo('project')">Project</a>
-    <a class="nav-link" onclick="scrollTo('certs')">Certificates</a>
-    <a class="nav-link" onclick="scrollTo('contact')">Contact</a>
+    <a class="nav-link" onclick="goTo('about')">About</a>
+    <a class="nav-link" onclick="goTo('skills')">Skills</a>
+    <a class="nav-link" onclick="goTo('research')" style="color:var(--purple-light);font-weight:700">🏛️ Patent</a>
+    <a class="nav-link" onclick="goTo('project')">Project</a>
+    <a class="nav-link" onclick="goTo('certs')">Certificates</a>
+    <a class="nav-link" onclick="goTo('contact')">Contact</a>
   </div>
-  <button class="nav-cta" onclick="scrollTo('contact')">Hire Me →</button>
+  <button class="nav-cta" onclick="goTo('contact')">Hire Me →</button>
 </nav>
 
 <!-- HERO -->
@@ -681,7 +681,7 @@ footer {
         <span>15+ certifications</span>. GNIT B.Tech AIML.
       </p>
       <div class="hero-actions">
-        <button class="btn-primary" onclick="scrollTo('project')">🚀 View My Work</button>
+        <button class="btn-primary" onclick="goTo('project')">🚀 View My Work</button>
         <button class="btn-outline" onclick="window.open('https://www.linkedin.com/in/priya-sharma-b81704344','_blank')">💼 LinkedIn</button>
         <button class="btn-outline" onclick="window.open('https://github.com/shobha03101981-prog','_blank')">🐙 GitHub</button>
       </div>
@@ -1152,9 +1152,9 @@ footer {
   <div class="footer-logo">PS.DEV © 2026</div>
   <div class="footer-text">Made with 💜 in Kolkata, India 🇮🇳</div>
   <div class="footer-links">
-    <a class="footer-link" onclick="scrollTo('home')">Home</a>
-    <a class="footer-link" onclick="scrollTo('project')">Project</a>
-    <a class="footer-link" onclick="scrollTo('contact')">Contact</a>
+    <a class="footer-link" onclick="goTo('home')">Home</a>
+    <a class="footer-link" onclick="goTo('project')">Project</a>
+    <a class="footer-link" onclick="goTo('contact')">Contact</a>
   </div>
 </footer>
 
@@ -1178,7 +1178,7 @@ function animRing(){
 animRing();
 
 // SCROLL
-function scrollTo(id){
+function goTo(id){
   document.getElementById(id)?.scrollIntoView({behavior:'smooth'});
 }
 
